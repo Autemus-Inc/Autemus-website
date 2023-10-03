@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+//  color variable
+
+$primary: #8F7A5D;
+$secondary: #F5F5DC;
+$grey: #D3D3D3;
+$lightgrey: #A9A094;
+$white: #ffffff;
+$black: #000000;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  color: $primary;
+  font-size: 48px;
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.logo {
+  width: 90px;
+}
+
+// layout mixin
+
+@mixin layout($display, $alignitems, $justifycontent) {
+  display: $display;
+  align-items: $alignitems;
+  justify-content: $justifycontent;
+}
+
+// input and bottom style
+
+%input-style {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 1.2em;
+  border-radius: 5px;
+}
+
+%button-style {
+  padding: 1em 1.5em;
+  border-radius: 8px;
+  font-weight: 700;
+  border: 0;
+  height: 90px
+}
+
+//  import partials
+
+@import "./contact";
+@import "./home";
+@import "./about";
+@import "./component"

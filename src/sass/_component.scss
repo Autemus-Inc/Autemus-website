@@ -1,0 +1,85 @@
+.top-header {
+    background-color: $primary;
+    padding: 1em 0;
+
+header {
+    @include layout(flex, center, space-between);
+    width: 90%;
+    height: 90px;
+    margin: 0 auto;
+
+    
+
+    a {
+        color: $white;
+        margin-left: 50px;
+        flex-direction: row;
+    }
+
+    a:first-child {
+        margin-left: 0;
+    }
+
+    a:last-child {
+        @extend %button-style;
+        background-color: $secondary;
+        color: $primary;
+    }
+}
+}
+footer {
+    background-color: $primary;
+    color: $white;
+    padding: 2em 0;
+
+    div {
+        width: 15%;
+    }
+ 
+    .contact-box {
+        width: 20%;
+
+        p:first-child {
+            font-weight: 700;
+        }
+    }
+
+    .footer-links {
+        @include layout(flex, start, space-between);
+        width: 90%;
+        margin: 0 auto;
+
+        a {
+            color: $white;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                margin-bottom: 1em;
+            }
+
+            li:first-child {
+                font-weight: 700;
+            }
+        }
+
+        .footer-logo {
+            width: 90px;
+        }
+
+        .social-box {
+            text-align: center;
+            width: 17%;
+
+            .socials {
+                margin-top: .5em;
+                font-size: 1.9rem;
+                width: 100%;
+                @include layout(flex, center, space-between);
+    
+            }
+        }
+    }
+}

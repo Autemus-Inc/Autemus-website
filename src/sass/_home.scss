@@ -1,0 +1,116 @@
+
+    .topBg {
+    margin-top: -40px;
+    position: relative;
+
+    .heroContent {
+        position: absolute;
+        width: 90%;
+        @include layout(flex, center, space-between);
+        top: 40%;
+        left: 50%;
+        color: $white;
+        transform: translate(-50%, -50%);
+
+        .content {
+            width: 55%;
+
+            h1 {
+                font-size: 54px;
+                margin: 0;
+            }
+
+            p {
+                width: 60%;
+                margin: 1.5em 0;
+            }
+
+            a {
+                width: 70%;
+                @include layout(flex, center, center);
+                @extend %button-style;
+                height: 51px;
+                padding: .2em;
+                background-color: $secondary;
+                color: $primary;
+            }
+        }
+
+        .hero {
+            width: 45%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.mainContent {
+    width: 90%;
+    margin: 2em auto;
+
+.topContent {
+    @include layout(flex, center, space-between);
+
+    .brief, .briefImg {
+        width: 46%;
+
+        p:first-child {
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 38px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        a {
+            width: 70%;
+            @include layout(flex, center, center);
+            @extend %button-style;
+            height: 51px;
+            padding: .2em;
+            background-color: $primary;
+            color: $secondary;
+        }
+    }
+}
+
+.product {
+    margin: 2em 0;
+}
+
+.product-container {
+    padding: 3em 0;
+    @include layout(flex, center, space-between);
+
+    .product-card {
+        @include layout(flex, start, center);
+        flex-direction: column;
+        width: 30%;
+        border: 1px solid $black;
+        padding: 1em;
+        border-radius: 8px;
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        p {
+            background-color: $secondary;
+            color: $primary;
+            font-weight: 700;
+            padding: .5em 1em;
+            align-self: flex-end;
+            border-radius: 30px;
+        }
+    }
+}
+}
