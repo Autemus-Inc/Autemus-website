@@ -1,9 +1,9 @@
 import React from 'react'
 import logo from "../assets/bg-logo.svg"
-import{ NavLink }from "react-router-dom"
-import contactBg from "../assets/contact-bg.svg"
+import{ NavLink } from "react-router-dom"
+import serviceBg from "../assets/service-bg.svg"
 
-const Contact = () => {
+const Service = () => {
   return (
     <div>
        <div className='whiteBg'>
@@ -19,10 +19,10 @@ const Contact = () => {
     </header>
     </div>
     <section className='pagebackground'>
-        <img src={contactBg} alt="" />
+        <img src={serviceBg} alt="" />
       </section>
     </div>
   )
 }
 
-export default Contact
+export default Service

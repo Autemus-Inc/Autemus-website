@@ -13,24 +13,33 @@ import discoverIcon from "../assets/discover.svg"
 import designIcon from "../assets/design.svg"
 import developmentIcon from "../assets/development.svg"
 import deployIcon from "../assets/deploy.svg"
+import { RxHamburgerMenu } from "react-icons/rx"
+import { useState } from 'react'
 
 const About = () => {
+  // const [showMenu, setShowMenu] = useState(false)
+
+  // function showNav() {
+  //   setShowMenu(true)
+  // }
+
   return (
     <div>
        <div className='whiteBg'>
     <header>
         <img src={logo} alt="" className='logo'/>
+        {/* <RxHamburgerMenu onClick={showNav}/> */}
         <nav>
             <NavLink to="/">Home</NavLink>
             <NavLink to="/about">About</NavLink>
-            <NavLink to="">Portfolio</NavLink>
-            <NavLink to="">Service</NavLink>
-            <NavLink to="" className="contact-btn">Contact</NavLink>
+            <NavLink to="/portfolio">Portfolio</NavLink>
+            <NavLink to="/service">Service</NavLink>
+            <NavLink to="/contact" className="contact-btn">Contact</NavLink>
         </nav>
     </header>
     </div>
     <main>
-      <section className='aboutbackground'>
+      <section className='pagebackground'>
         <img src={aboutBg} alt="" />
       </section>
       <div className="mainContent">
