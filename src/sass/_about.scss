@@ -20,9 +20,56 @@
     
         a:last-child {
             @extend %button-style;
-            background-color: $secondary;
-            color: $primary;
+            background-color: $primary;
+            color: $white;
         }
     }
 }
 
+.aboutbackground {
+    margin-bottom: 5em;
+
+    img {
+        width: 100%;
+    }
+}
+
+.value-card {
+    width: 32%;
+    background-color: $grey;
+    flex-direction: column;
+    @include layout(flex, center, center);
+    margin-bottom: 1em;
+    border-radius: 10px;
+    padding: 1em;
+
+    h5 {
+        font-size: 1.4rem;
+    }
+}
+
+.processText {
+    width: 60%;
+    margin: 2em auto;
+    text-align: center
+}
+
+.process {
+    @include layout(flex, center, space-between);
+    flex-wrap: wrap;
+
+    .process-card {
+        width: 45%;
+        margin-bottom: 1em;
+
+        h4 {
+            font-size: 1.4rem;
+            padding: .5em;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
