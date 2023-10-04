@@ -1,0 +1,28 @@
+.whiteBg {
+    background-color: $white;
+    padding: 1em 0;
+    
+    header {
+        @include layout(flex, center, space-between);
+        width: 90%;
+        height: 90px;
+        margin: 0 auto;
+    
+        a {
+            color: $primary;
+            margin-left: 50px;
+            flex-direction: row;
+        }
+    
+        a:first-child {
+            margin-left: 0;
+        }
+    
+        a:last-child {
+            @extend %button-style;
+            background-color: $secondary;
+            color: $primary;
+        }
+    }
+}
+
