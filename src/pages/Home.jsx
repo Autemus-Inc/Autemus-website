@@ -1,7 +1,7 @@
 import React from 'react'
 import{ NavLink }from "react-router-dom"
 import logo from "../assets/bg-logo.svg"
-import heroImg from "../assets/heroimg.svg"
+import heroImg from "../assets/heroImg.svg"
 import teamImg from "../assets/photo-uvp.svg"
 import transafeImg from "../assets/transafe.png"
 
