@@ -14,9 +14,9 @@ const Home = () => {
         <nav>
             <NavLink to="/">Home</NavLink>
             <NavLink to="/about">About</NavLink>
-            <NavLink to="">Portfolio</NavLink>
-            <NavLink to="">Service</NavLink>
-            <NavLink to="" className="contact-btn">Contact</NavLink>
+            <NavLink to="/portfolio">Portfolio</NavLink>
+            <NavLink to="/service">Service</NavLink>
+            <NavLink to="/contact" className="contact-btn">Contact</NavLink>
         </nav>
     </header>
     </div>
@@ -43,7 +43,7 @@ const Home = () => {
             <p>Our unique strength lies in seamlessly transitioning from ideation to execution. Autemus crafts exceptional software products and serves as a trusted partner in the development process</p>
             <p>We specialize in collaborating with clients to turn ideas into fully functional applications, whether mobile, web, or desktop.</p>
             <p> Our commitment doesn't stop at creation – we provide ongoing support and maintenance, ensuring software solutions remain cutting-edge and efficient over time.</p>
-            <NavLink>Get in Touch</NavLink>
+            <NavLink to="/contact">Get in Touch</NavLink>
         </div>
         <div className='briefImg'>
             <img src={teamImg} alt="" />

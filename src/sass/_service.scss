@@ -1,0 +1,20 @@
+h2 {
+    margin: 1em 0;
+}
+
+.service-card {
+    width: 48%;
+    margin: 1.5em 0;
+    padding: 2em;
+    border-radius: 10px;
+    background-color: $secondary;
+    flex-direction: column;
+    text-align: center;
+    @include layout(flex, center, center);
+
+    h4 {
+        color: $primary;
+        font-size: 1.3rem;
+        margin: .5em 0;
+    }
+}
