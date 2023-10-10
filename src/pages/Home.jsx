@@ -1,38 +1,16 @@
 import React from 'react'
 import{ NavLink }from "react-router-dom"
-import logo from "../assets/bg-logo.svg"
-import heroImg from "../assets/heroImg.svg"
 import teamImg from "../assets/photo-uvp.svg"
 import transafeImg from "../assets/transafe.png"
 
 const Home = () => {
   return (
     <div>
-        <div className='top-header'>
-    <header>
-        <img src={logo} alt="" className='logo'/>
-        <nav>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about">About</NavLink>
-            <NavLink to="/portfolio">Portfolio</NavLink>
-            <NavLink to="/service">Service</NavLink>
-            <NavLink to="/contact" className="contact-btn">Contact</NavLink>
-        </nav>
-    </header>
-    </div>
     <section className='topBg'>
-        <svg width="100%" height="1073" viewBox="0 0 1512 1073" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M-6.10352e-05 0H1512V878.444C1512 878.444 991.5 1241.07 497 976.182C2.49985 711.292 -6.10352e-05 878.444 -6.10352e-05 878.444V0Z" fill="#8F7A5D"/>
-        </svg>
-        <div className='heroContent'>
-            <div className='content'>
+        <div className='content'>
             <h1>Welcome to Autemus</h1>
             <p>At Autemus Solutions, we are at the forefront of innovation, pushing the boundaries of what's possible in the world of software solutions.</p>
             <NavLink to="/contact" className="contact-btn">Contact</NavLink>
-            </div>
-            <div className='hero'>
-                <img src={heroImg} alt="" />
-            </div>
         </div>
     </section>
     <div className='mainContent'>
@@ -70,7 +48,7 @@ const Home = () => {
         </div>
     </section>
     <section>
-    <h2>What people are saying about us</h2>
+    <h2>Reviews</h2>
     
     </section>
     </div>
