@@ -2,6 +2,7 @@ import React from 'react'
 import{ NavLink }from "react-router-dom"
 import teamImg from "../assets/photo-uvp.svg"
 import transafeImg from "../assets/transafe.png"
+import Slider from '../components/Slider'
 
 const Home = () => {
   return (
@@ -49,7 +50,9 @@ const Home = () => {
     </section>
     <section>
     <h2>Reviews</h2>
-    
+    <div className='slider-container'>
+        <Slider />
+    </div>
     </section>
     </div>
 </div>

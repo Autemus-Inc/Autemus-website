@@ -127,3 +127,41 @@
     }
 }
 }
+
+.slider-container {
+    display: flex;
+}
+
+.slider {
+    @include layout(flex, center, space-between);
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+
+    .slide {
+        width: 32%;
+        @include layout(flex, center, space-between);
+        background-color: $secondary;
+        border-radius: 10px;
+        margin-bottom: 1em;
+        padding: 1em;
+        
+        div {
+            width: 65%;
+
+            p {
+                font-size: .8rem;
+            }
+        }
+       
+
+        img {
+            width: 30%;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        
+    }
+}
