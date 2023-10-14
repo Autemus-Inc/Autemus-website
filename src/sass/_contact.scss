@@ -1,0 +1,81 @@
+.text-primary{
+    color : #5a8dee !important;
+}
+
+.accordion-card{
+    border-bottom: 1px solid $primary;
+    overflow: hidden;
+    background-color: $secondary;
+    width: 70%;
+    margin: 0 auto;
+
+    .accordion-toggle {
+        @include layout(flex, center, space-between);
+        cursor: pointer;
+        background-color: $secondary;
+        padding: 0 1em;
+        transition: 0.3s;
+    }
+
+    .accordion-icon{
+        font-size: 3rem;
+        color: $primary;
+        transition: 0.35s;
+    }
+
+    .accordion-toggle.active{
+        background-color: $primary;
+    }
+
+    .accordion-toggle.active .accordion-icon{
+        transform: rotate(180deg);
+        color: $white;
+    }
+    
+    .accordion-title {
+        font-size: 1rem;
+        color: $primary;
+    }
+    
+    .accordion-toggle.active .accordion-title{
+        color: $white;
+    }
+
+    .accordion-body {
+        padding: 1em;
+    }
+
+    .collapse {
+        transition: height 0.35s ease;
+        height: 0;
+        background-color: $white;
+    }
+}
+
+.contact-form {
+    width: 70%;
+    margin: 0 auto;
+
+    form {
+        width: 90%;
+        margin: 1em auto;
+
+        input, button, textarea {
+            @extend %input-style;
+            display: block;
+            width: 100%;
+            border: 0;
+            outline: none;
+            background-color: $secondary;
+        }
+
+        button {
+            @extend %button-style;
+            height: 51px;
+            font-size: 1rem;
+            background-color: $primary;
+            color: $white;
+        }
+    }
+}
+
